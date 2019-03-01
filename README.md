@@ -21,6 +21,7 @@ Use the native Android `BottomSheet` view in Appcelerator Titanium. Credits to t
 | `title` | String |
 | `options` | Array<String> |
 | `cancelable` | Boolean |
+| `destructive` | Number |
 
 #### Events
 
