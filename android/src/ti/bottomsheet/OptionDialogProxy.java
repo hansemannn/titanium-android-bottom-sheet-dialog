@@ -40,6 +40,7 @@ public class OptionDialogProxy extends KrollProxy
 	private String title;
 	private String[] options;
 	private boolean cancelable;
+	private int destructive;
 
 	// Handle creation options
 	@Override
@@ -50,6 +51,7 @@ public class OptionDialogProxy extends KrollProxy
 		title = args.getString("title");
 		options = TiConvert.toStringArray((Object[]) args.get("options"));
 		cancelable = args.optBoolean("cancelable", true);
+		destructive = args.optInt("destructive", -1);
 	}
 
 	// Methods
@@ -62,6 +64,10 @@ public class OptionDialogProxy extends KrollProxy
 
 		// TODO: Export all styles
 		builder.setStyle(BottomSheet.Style.LIST);
+
+		if (destructive > -1) {
+			builder.setTitleColor(TiConvert.toColor("red"));
+		}
 
 		int i = 0;
 
