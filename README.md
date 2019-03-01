@@ -1,6 +1,8 @@
 # Titanium Android BottomSheet module
 
-Use the native Android `BottomSheet`  view in Appcelerator Titanium.
+Use the native Android `BottomSheet` view in Appcelerator Titanium.
+
+<img src="./screenshot.png" width="300" alt="Example Screenshot" />
 
 ## Requirements
 - [x] Titanium SDK 7.0.0+
