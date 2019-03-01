@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86
+description: titanium-android-bottom-sheet
+author: Hans Knöchel
+license: Apache 2
+copyright: Copyright (c) 2019 by Hans Knöchel
+
+# these should not be edited
+name: titanium-android-bottom-sheet
+moduleid: ti.bottomsheet
+guid: 04a8e48b-0432-474b-8596-dca1256b314b
+platform: android
+minsdk: 7.0.0
