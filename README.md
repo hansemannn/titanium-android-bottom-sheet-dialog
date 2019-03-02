@@ -1,6 +1,9 @@
 # Titanium Android BottomSheet module
 
-Use the native Android `BottomSheet` view in Appcelerator Titanium. Credits to the native [`michael-rapp/AndroidBottomSheet`](https://github.com/michael-rapp/AndroidBottomSheet) library and [@chrystoffer](https://github.com/chrystoffer) for the initial example.
+Use the native Android `BottomSheet` view in Appcelerator Titanium. 
+
+Credits go to the native [`michael-rapp/AndroidBottomSheet`](https://github.com/michael-rapp/AndroidBottomSheet) library 
+and [@chrystoffer](https://github.com/chrystoffer) for the initial Hyperloop based example. Thanks guys! 🤘
 
 <img src="./screenshot.png" width="300" alt="Example Screenshot" />
 
@@ -17,18 +20,22 @@ Use the native Android `BottomSheet` view in Appcelerator Titanium. Credits to t
 #### Arguments
 
 | Name | Type |
-| - | - | |
+| - | - |
 | `title` | String |
 | `options` | Array<String> |
 | `cancelable` | Boolean |
-| `destructive` | Number |
+| `destructive`* | Number |
+
+> `*` The `destructive` option is there to mimic the native iOS behavior by tinting the title
+red. Different to iOS, the title will be red if the index is > -1 and is not applied to a single
+option but the title.
 
 #### Events
 
 ##### `click`
 
 | Name | Type |
-| - | - | |
+| - | - |
 | `index` | Number |
 | `cancel` | Boolean |
 
@@ -58,4 +65,4 @@ ti build -p android --build-only
 
 ## Legal
 
-This module is Copyright (c) 2019-present by Hans Knöchel. All Rights Reserved.
+Copyright (c) 2019-present by Hans Knöchel. All Rights Reserved.
