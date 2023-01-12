@@ -1,17 +1,7 @@
-apply plugin: 'java'
-
 repositories {
-	google()
-	jcenter()
 	mavenCentral()
 }
 
 dependencies {
-    compile 'com.github.michael-rapp:android-bottom-sheet:1.4.6'
-}
-
-task getDeps(type: Copy) {
-	from sourceSets.main.runtimeClasspath
-	exclude 'support-*'
-	into 'lib/'
+    implementation 'com.github.michael-rapp:android-bottom-sheet:2.0.0'
 }
