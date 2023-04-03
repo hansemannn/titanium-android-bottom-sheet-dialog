@@ -54,7 +54,15 @@ public class OptionDialogProxy extends KrollProxy
 		destructive = args.optInt("destructive", -1);
 	}
 
-	// Methods
+	@Kroll.setProperty
+	public void setOptions(Object[] value){
+		options = TiConvert.toStringArray(value);
+	}
+
+	@Kroll.getProperty
+	public String[] setOptions(){
+		return options;
+	}
 
 	@Kroll.method
 	public void show() {
